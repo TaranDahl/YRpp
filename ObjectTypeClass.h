@@ -42,7 +42,7 @@ public:
 	virtual SHPStruct* GetCameo() const R0;
 	virtual SHPStruct* GetImage() const R0;
 
-	static bool __fastcall IsBuildCat5(AbstractType abstractID, int idx)
+	static BuildCat __fastcall GetBuildCat(AbstractType abstractID, int idx)
 		{ JMP_STD(0x5004E0); }
 
 	static TechnoTypeClass * __fastcall GetTechnoType(AbstractType abstractID, int idx)
