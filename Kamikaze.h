@@ -7,13 +7,13 @@
 
 //forward declarations
 class AircraftClass;
-class CellClass;
+class AbstractClass;
 
 class Kamikaze {
 public:
 	struct KamikazeControl {
 		AircraftClass* Item;
-		CellClass* Cell;
+		AbstractClass* Target;
 	};
 
 	DEFINE_REFERENCE(Kamikaze, Instance, 0xABC5F8u)

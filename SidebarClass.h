@@ -201,7 +201,7 @@ public:
 	DWORD unknown_5394;
 	DWORD unknown_5398;
 	int ActiveTabIndex;
-	DWORD unknown_53A0;
+	int unknown_frame_53A0;
 	bool HideObjectNameInTooltip; // see 0x6A9343
 	bool IsSidebarActive;
 	bool SidebarNeedsRedraw;

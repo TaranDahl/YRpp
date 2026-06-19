@@ -62,13 +62,12 @@ public:
 	DEFINE_REFERENCE(ScrollClass, Instance, 0x87F7E8u)
 
 	DWORD unknown_int_5548;
-	BYTE unknown_byte_554C;
+	bool RightDownAndDragging;
 	PROTECTED_PROPERTY(BYTE, align_554D[3]);
-	DWORD unknown_int_5550;
-	DWORD unknown_int_5554;
-	BYTE unknown_byte_5548;
+	Point2D RightDownPosition;
+	bool RightDownAndDragging2;
 	BYTE unknown_byte_5549;
-	BYTE unknown_byte_554A;
+	bool AnyMouseButtonDown;
 	PROTECTED_PROPERTY(BYTE, padding_554B);
 };
 
