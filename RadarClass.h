@@ -1,6 +1,8 @@
 #pragma once
 
 #include <DisplayClass.h>
+#include <Audio.h>
+
 struct RadarTrackingStruct;
 
 enum class RadarStateType : int
@@ -71,20 +73,15 @@ public:
 	DWORD unknown_11F4;
 	DWORD unknown_11F8;
 	DWORD unknown_11FC;
-	DWORD unknown_1200;
-	DWORD unknown_1204;
-	DWORD unknown_1208;
+	Point2D unknown_point2d_1200;
+	DWORD unknown_color_1208;
 	RectangleStruct unknown_rect_120C;
-	DSurface* unknown_121C;
-	DWORD unknown_1220;
+	DSurface* unknown_surface_121C;
+	BSurface *unknown_surface_1220;
 	DynamicVectorClass<CellStruct> unknown_cells_1124;
 	DWORD unknown_123C;
-	DWORD unknown_1240;
-	DWORD unknown_1244;
-	DWORD unknown_1248;
-	DWORD unknown_124C;
-	DWORD unknown_1250;
-	DWORD unknown_1254;
+	Point2D unknown_point2d_1240;
+	RectangleStruct unknown_rect_1248;
 	HashTable<RadarTrackingStruct, TechnoClass*>* unknown_1258;
 	DynamicVectorClass<Point2D> unknown_points_125C;
 	DWORD unknown_1274;
@@ -101,11 +98,7 @@ public:
 	DWORD unknown_14B8;
 	bool unknown_bool_14BC;
 	bool unknown_bool_14BD;
-	DWORD unknown_14C0;
-	DWORD unknown_14C4;
-	DWORD unknown_14C8;
-	DWORD unknown_14CC;
-	DWORD unknown_14D0;
+	AudioController RadarAudioController;
 	int unknown_int_14D4;
 	bool IsAvailableNow;
 	bool unknown_bool_14D9;

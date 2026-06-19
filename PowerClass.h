@@ -25,12 +25,12 @@ public:
 	bool PowerNeedRedraw;
 	PROTECTED_PROPERTY(BYTE, align_150D[3])
 	CDTimerClass unknown_timer_1510;
-	DWORD unknown_151C;
+	int FloatingCompleteCountDown;
 	CDTimerClass unknown_timer_1520;
-	DWORD unknown_152C;
-	DWORD unknown_1530;
-	DWORD unknown_1534;
-	bool unknown_bool_1538;
+	int GreenBarHeight;
+	int YellowBarHeight;
+	int RedBarHeight;
+	bool PowerIsFloating;
 	PROTECTED_PROPERTY(BYTE, align_1539[3])
 	int PowerOutput;
 	int PowerDrain;

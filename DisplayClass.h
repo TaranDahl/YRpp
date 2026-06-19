@@ -4,6 +4,7 @@
 
 class CCINIClass;
 class ObjectTypeClass;
+class WaypointClass;
 
 class NOVTABLE DisplayClass : public MapClass
 {
@@ -98,8 +99,8 @@ public:
 	CellStruct CurrentFoundation_CenterCell;	//Currently placing the building here
 	CellStruct CurrentFoundation_TopLeftOffset;		// offset from center cell of the current foundation (under the mouse) to the top left cell
 	CellStruct* CurrentFoundation_Data;	//Foundation data of the building we're currently placing (note: limited to 120 cells)
-	bool unknown_1180;
-	bool unknown_1181;
+	bool CurrentFoundation_InAdjacent;
+	bool CurrentFoundation_NoShrouded;
 	CellStruct CurrentFoundationCopy_CenterCell; // All the Copies are used in the time between clicking and actual execution
 	CellStruct CurrentFoundationCopy_TopLeftOffset;
 	CellStruct * CurrentFoundationCopy_Data; // (note: limited to 50 [!] cells)
@@ -117,16 +118,15 @@ public:
 	bool PlanningMode;
 	bool PlaceBeaconMode;
 	int CurrentSWTypeIndex;	//Index of the SuperWeaponType we have currently selected
-	DWORD unknown_11BC;
-	Point2D unknown_11C0;
+	WaypointClass *unknown_waypoint_11BC;
+	Point2D unknown_waypoint_location_11C0;
 	DWORD unknown_11C8;
 	bool unknown_bool_11CC;
 	bool unknown_bool_11CD;
 	bool unknown_bool_11CE;
 	bool LeftPressAndDraggingRectangle;
-	bool unknown_bool_11D0;
+	bool LeftPressAndNoDraggingRectangle;
 	bool unknown_bool_11D1;
 	Point2D LeftDownPosition;
-	Point2D unknown_11DC;
-	PROTECTED_PROPERTY(DWORD, padding_11E4);
+	Point2D LeftDownPosition2;
 };

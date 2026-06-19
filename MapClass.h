@@ -570,17 +570,15 @@ protected:
 
 public:
 	DWORD unknown_10;
-	HashTable<DWORD,DWORD>* unknown_pointer_14;
+	HashTable<DWORD,DWORD>* ZonesConnectionsData;
 	void* MovementZones [13];
 	DWORD somecount_4C;
 	DynamicVectorClass<ZoneConnectionClass> ZoneConnections;
 	CellLevelPassabilityStruct* LevelAndPassability;
 	int ValidMapCellCount;
 	LevelAndPassabilityStruct2* LevelAndPassabilityStruct2pointer_70;
-	DWORD unknown_74;
-	DWORD unknown_78;
-	DWORD unknown_7C;
-	HashTable<DWORD, SubzoneConnectionStruct>* unknown_80[3]; // somehow connected to the 3 vectors below
+	int SubZonesCounts[3];
+	HashTable<DWORD, SubzoneConnectionStruct>* SubZonesConnectionsData[3]; // somehow connected to the 3 vectors below
 	DynamicVectorClass<SubzoneTrackingStruct> SubzoneTracking[3];
 	DynamicVectorClass<CellStruct> CellStructs1;
 	RectangleStruct MapRect;
