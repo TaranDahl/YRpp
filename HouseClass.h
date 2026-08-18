@@ -484,6 +484,9 @@ public:
 	BuildingTypeClass* FirstBuildableFromArray(DynamicVectorClass<BuildingTypeClass*> const& items)
 		{ JMP_THIS(0x5051E0); }
 
+	bool ShouldDisableCameo(TechnoTypeClass* pTechnoType) const
+		{ JMP_THIS(0x50B370); }
+
 	// are all prereqs for Techno listed in vectorBuildings[0..vectorLength]. Yes, the length is needed (the vector is used for breadth-first search)
 	bool AllPrerequisitesAvailable(TechnoTypeClass const* pItem, DynamicVectorClass<BuildingTypeClass*> const& vectorBuildings, int vectorLength)
 		{ JMP_THIS(0x505360); }
