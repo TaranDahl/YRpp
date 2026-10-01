@@ -1666,6 +1666,7 @@ enum class WWKey : int
 	VirtualKey = 0x1000,
 	DoubleClick = 0x2000,
 	Button_IsRightClick = 0x4000, // See 0x48E5C8
+	RightClick = 0x4000, // alias of Button_IsRightClick, kept for Mix
 	Button = 0x8000,
 };
 
