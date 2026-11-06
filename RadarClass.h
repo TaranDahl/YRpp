@@ -67,11 +67,10 @@ protected:
 	//===========================================================================
 
 public:
-	DWORD unknown_11E8;
-	DWORD unknown_11EC;
+	Point2D unknown_point2d_11E8;
 	int RadarX;
-	DWORD unknown_11F4;
-	DWORD unknown_11F8;
+	int unknown_size_11F4;
+	int unknown_size_11F8;
 	DWORD unknown_11FC;
 	Point2D unknown_point2d_1200;
 	DWORD unknown_color_1208;
@@ -104,10 +103,7 @@ public:
 	bool unknown_bool_14D9;
 	bool unknown_bool_14DA;
 	RectangleStruct RadarViewRect;
-	DWORD unknown_14EC;
-	DWORD unknown_14F0;
-	DWORD unknown_14F4;
-	DWORD unknown_14F8;
+	RectangleStruct RadarScopeRect2;
 	int RadarAnimFrame; // 0x14FC
 	SysTimerClass RadarAnimTimer; // 0x1500
 };
