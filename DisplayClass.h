@@ -129,4 +129,5 @@ public:
 	bool unknown_bool_11D1;
 	Point2D LeftDownPosition;
 	Point2D LeftDownPosition2;
+	PROTECTED_PROPERTY(DWORD, padding_11E4); // field at 0x11E4; keeping this padding is required for the Tab/Scroll/Mouse size asserts and the real binary layout
 };
